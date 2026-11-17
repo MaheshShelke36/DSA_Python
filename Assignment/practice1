@@ -1,0 +1,55 @@
+#pop in stack
+
+stack = [10, 20, 30]
+
+if len(stack) == 0:
+    print("Stack is Empty")
+else:
+    print("Deleted:", stack.pop())
+
+print("Stack:", stack)
+
+#push in stack
+
+Stack=[]
+q=Stack
+q.append(10)
+q.append(20)
+q.append(30)
+print(Stack)
+
+#Display the stack
+
+stack = [10, 20, 30]
+
+for i in range(len(stack)-1, -1, -1):
+    print(stack[i])
+
+#reverse string in stack
+
+s = input("Enter string: ")
+
+stack = []
+
+for i in s:
+    stack.append(i)
+
+rev = ""
+
+while len(stack) > 0:
+    rev = rev + stack.pop()
+
+print("Reversed String:", rev)
+
+#reverse it using another stack
+
+stack = [10, 20, 30]
+
+temp = []
+
+while len(stack) > 0:
+    temp.append(stack.pop())
+
+stack = temp
+
+print("Reversed Stack:", stack)
